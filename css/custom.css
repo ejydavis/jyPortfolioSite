@@ -1,6 +1,7 @@
-body {
+body, html {
   font-family: Nunito, Roboto, sans-serif;
   color: #FFFFFF;
+  height: 100%;
 }
 
 #navbarNav ul {
