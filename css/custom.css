@@ -17,7 +17,7 @@ body {
   color: #FFFFFF;
   font-weight: 500;
   font-size: 23px;
-  text-shadow: 1px 1px #FFFFFF;
+  text-shadow: .5px .5px #FFFFFF;
   padding-left: 100px;
   padding-right: 100px;
 }
