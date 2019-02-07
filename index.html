@@ -8,18 +8,19 @@
       href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Nunito">
-
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Changa+One|Marck+Script">
           <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
 
+
 <title>Jesse Yang's Portfolio Website</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-sm fixed-top navbar-light" id="navbarNav">
-    <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,9 +30,6 @@
               <a class="nav-link" href="#">Top</a>
             </li>
             <li class="navbar-item active">
-              <a class="nav-link" href="#work">Work</a>
-            </li>
-            <li class="navbar-item active">
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="navbar-item active">
@@ -39,19 +37,17 @@
             </li>
           </ul>
         </div>
-    </div>
 </nav>
 
-  <div class="vh-100" style="background-image: url('images/top.jpg')" id="topBack1">
+  <div class="vh-100 fullPage" style="background-image: url('images/top.jpg')">
     <div class="container d-flex h-100">
-      <div class="card row mx-auto justify-content-center align-self-center" style="width: 36rem; background-color: rgba(245, 245, 245, 0.1)">
-        <div class="card-body">
-          <h3 class="card-text">Hi! I'm Jesse and I like to make stuff</h3>
-        </div>
+      <div class="row mx-auto justify-content-center align-self-center">
+          <h3 id="welcomeLine">Hi! I'm Jesse and I like to make stuff</h3>
       </div>
     </div>
   </div>
-  <div class="vh-100" style="background-image: linear-gradient(to right, #7695b0, #515f96)" id="topBack2">
+
+  <div class="vh-100 fullPage" style="background-image: linear-gradient(to right, #7695b0, #515f96)">
     <section id="top" class="container d-flex h-100">
       <div class="row mx-auto justify-content-center align-self-center">
         <div class="col-12">
@@ -61,7 +57,7 @@
         </div>
         <div class="col-12 mt-4" style="padding: 2px 2px; text-align: center" id="profileText">
           <header>
-            <h1>Hi! My name is Jesse Yang.</h1>
+            <h1>My name is Jesse Yang.</h1>
           </header>
           <p>
             I am a student at Brandeis University and am excited to learn
@@ -74,66 +70,95 @@
     </section>
   </div>
 
-  <div class="full-width" style="background-image: linear-gradient(to right, #7ea7bf, #5f7aba)">
+<!--
+  Remember for portfolio images go 500 by 650 for sizing
+-->
+
+  <div class="vh-100 fullPage" style="background-image: linear-gradient(to right, #7695b0, #515f96)">
     <section id="portfolio" class="container">
-      <div class="container">
-        <header class="section-header">
-          <h2 class="pt-4">Some of my Projects</h2>
-          <p>Here are some of the projects I am working on.</p>
-        </header>
-        <div class="row align-items-start" id="portfolioContent">
-          <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="row" id="portfolioContent">
+          <div class="col-lg-4 col-md-6 col-xs-12 pb-4">
               <div class="hovereffect">
-                  <img class="img-responsive" src="images/profile.jpg" alt="">
+                  <img class="img-fluid" src="images/rube.png" alt="">
                   <div class="overlay">
-                     <a class="info" href="#">Project Name</a>
+                     <a class="info" href="https://youtu.be/qODPKtq_4oU">
+                       <h3>Rube Goldberg Machine</h3>
+                       <p>Class assignment for 3D Animation built on blender</p>
+                       <p>Hosted on youtube</p>
+                     </a>
                   </div>
               </div>
           </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="col-lg-4 col-md-6 col-xs-12 pb-4">
               <div class="hovereffect">
-                  <img class="img-responsive" src="images/profile.jpg" alt="">
-                  <div class="overlay">
-                     <a class="info" href="#">Project Name</a>
+                  <img class="img-fluid" src="images/weather.png" alt="">
+                  <div class="overlay mask flex-center">
+                    <a class="info" href="https://youtu.be/qODPKtq_4oU">
+                      <h3>Weather Now</h3>
+                      <p>A node.js site for looking up weather information about a city in real time</p>
+                      <p>UNDER CONSTRUCTION</p>
+                    </a>
                   </div>
               </div>
           </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="col-lg-4 col-md-6 col-xs-12 pb-4">
               <div class="hovereffect">
-                  <img class="img-responsive" src="images/profile.jpg" alt="">
+                  <img class="img-fluid" src="images/flap.png" alt="">
                   <div class="overlay">
-                     <a class="info" href="#">Project Name</a>
+                    <a class="info" href="https://youtu.be/qODPKtq_4oU">
+                      <h3>Flap Bird</h3>
+                      <p>
+                        A clone of the popular game Flappy Bird built on js and
+                        deployed to github pages
+                      </p>
+                      <p>UNDER CONSTRUCTION</p>
+                    </a>
                   </div>
               </div>
           </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="col-lg-4 col-md-6 col-xs-12 pb-4">
               <div class="hovereffect">
-                  <img class="img-responsive" src="images/profile.jpg" alt="">
+                  <img class="img-fluid" src="images/mathquest.png" alt="">
                   <div class="overlay">
-                     <a class="info" href="#">Project Name</a>
+                    <a class="info" href="https://youtu.be/qODPKtq_4oU">
+                      <h3>Math Quest</h3>
+                      <p>
+                        A math education web application built on the Ruby on Rails framework aiming to supplement middle-school and
+                        high-school mathematics education with entertaining narratives in the field of mathematics
+                      </p>
+                      <p>UNDER CONSTRUCTION</p>
+                    </a>
                   </div>
               </div>
           </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
-                  <img class="img-responsive" src="images/profile.jpg" alt="">
-                  <div class="overlay">
-                     <a class="info" href="#">Project Name</a>
-                  </div>
-              </div>
-          </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect">
-                    <img class="img-responsive" src="images/profile.jpg" alt="">
-                    <div class="overlay">
-                       <a class="info" href="#">Project Name</a>
-                    </div>
-                </div>
-            </div>
           </div>
     </section>
   </div>
 
+  <div class="vh-100 fullPage" style="background-image: linear-gradient(to right, #7695b0, #515f96)">
+    <section id="contact" class="container d-flex h-100">
+      <div class="row justify-content-center align-items-center" id="contactContent">
+        <div class="col-12 col-md-6 justify-content-center align-items-center text-center">
+          <h1>Hire Me</h1>
+          <p>
+            Thanks for the interest in my work! Currently as a student I am looking for internships involving exciting products and services,
+            let me know if you think I would be a good fit for your team and feel free to send me an email at <strong>ejesyang@gmail.com</strong>.
+          </p>
+          <p>
+            I am also available for freelance web development. Please send any inquiries to my email address above and we can schedule a time to talk
+            over the phone.
+          </p>
+          <div class="container">
+            <ul class="social-network social-circle">
+              <li><a href="https://www.facebook.com/jesse.yang.376" class="icoFacebook" title="Facebook"><image src="images/fb.png" class="social-icon"></i></a></li>
+              <li><a href="https://github.com/ejydavis" class="icoGithub" title="Github"><image src="images/github.png" class="social-icon"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/ejyang/" class="icoLinkedin" title="Linkedin"><image src="images/linkedin.png" class="social-icon"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
