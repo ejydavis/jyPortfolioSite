@@ -91,6 +91,7 @@ body, html {
   -webkit-transform: scale(0,1);
   -ms-transform: scale(0,1);
   transform: scale(0,1);
+  border-radius:10%;
 }
 
 .hovereffect:hover .overlay {
@@ -106,6 +107,7 @@ body, html {
   position: relative;
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
+  border-radius:10%;
 }
 
 .hovereffect:hover img {
